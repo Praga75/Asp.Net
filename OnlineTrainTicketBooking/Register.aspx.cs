@@ -40,7 +40,7 @@ namespace OnlineTrainTicketBooking
             user.Nationality =Request.Form["Nationality"];
 
           
-            ///User user = new User(userName, password, confirmPassword, name, mailId, dateOfBirth, gender, mobileNumber, nationality);
+            //User user = new User(userName, password, confirmPassword, name, mailId, dateOfBirth, gender, mobileNumber, nationality);
             UserRepository.GetRegisteredInfo(user);
         }
     }
