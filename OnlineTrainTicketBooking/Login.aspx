@@ -24,7 +24,7 @@
 
                 <asp:Button ID="btnLogin" runat="server" Text="Login" Width="100px" OnClick="btnLogin_Click" />
                 
-                <asp:Button ID="btnRegister" runat="server" Text="Register" Width="100px" OnClientClick="window.open('Register.aspx','RegisterPage');" />
+                <asp:Button ID="btnSignUp" runat="server" Text="SignUp" Width="100px" OnClientClick="window.open('SignUp.aspx','SignUpPage');" />
            
                 </div>
         </div>

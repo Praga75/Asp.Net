@@ -11,7 +11,7 @@ namespace OnlineTrainTicketBooking
 {
 
 
-    public partial class Register
+    public partial class SignUp
     {
 
         /// <summary>

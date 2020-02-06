@@ -28,7 +28,6 @@ namespace OnlineTrainTicketBooking
                         sqlCommand.Parameters.AddWithValue("@Gender", user.Gender);
                         sqlCommand.Parameters.AddWithValue("@MobileNumber", user.MobileNumber);
                         sqlCommand.Parameters.AddWithValue("@Nationality", user.Nationality);
-                        sqlCommand.ExecuteNonQuery();
                         sqlConn.Open();
                         sqlCommand.ExecuteNonQuery();
                     }
@@ -41,7 +40,7 @@ namespace OnlineTrainTicketBooking
 
 
         }
-        public static int checkLogin(string username, string password)
+        public static int CheckLogin(string username, string password)
         {
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
@@ -53,38 +52,7 @@ namespace OnlineTrainTicketBooking
             connection.Close();
             return result;
         }
-        //public static void GetRegisteredInfo(User user)
-        //{
-        //    string connectionString = ConfigurationManager.ConnectionStrings["Connectionstring"].ConnectionString;
-        //    SqlConnection sqlConnection = new SqlConnection(connectionString);
-
-        //    SqlCommand sqlCommand = new SqlCommand("sp_UserDetail", sqlConnection);
-        //    sqlCommand.CommandType = CommandType.StoredProcedure;
-
-        //    try
-        //    {
-        //        sqlConnection.Open();
-        //        sqlCommand.Parameters.AddWithValue("@UserName", user.UserName);
-        //        sqlCommand.Parameters.AddWithValue("@Password", user.Password);
-        //        sqlCommand.Parameters.AddWithValue("@ConfirmPassword", user.ConfirmPassword);
-        //        sqlCommand.Parameters.AddWithValue("@Name", user.Name);
-        //        sqlCommand.Parameters.AddWithValue("@MailId", user.MailId);
-        //        sqlCommand.Parameters.AddWithValue("@Dateofbirth", user.DateOfBirth);
-        //        sqlCommand.Parameters.AddWithValue("@Gender", user.Gender);
-        //        sqlCommand.Parameters.AddWithValue("@MobileNumber", user.MobileNumber);
-        //        sqlCommand.Parameters.AddWithValue("@Nationality", user.Nationality);               
-        //        sqlCommand.ExecuteNonQuery();
-
-        //    }
-        //    catch
-        //    {
-        //        Console.WriteLine("Something Went Wrong");
-        //    }
-        //    finally
-        //    {
-        //        sqlConnection.Close();
-        //    }
-        //}
+        
     }
 
 }

@@ -20,10 +20,10 @@ namespace OnlineTrainTicketBooking
             string password = txtPassword.Text.Trim();
 
 
-            if (UserRepository.checkLogin(username, password) == 1)
+            if (UserRepository.CheckLogin(username, password) == 1)
             {
                 Session["Username"] = username;
-                Response.Redirect("Home.aspx");
+                Response.Write("Logged In Successfully");
             }
             else
             {

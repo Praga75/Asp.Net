@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="OnlineTrainTicketBooking.Register" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="OnlineTrainTicketBooking.SignUp" %>
 
 <!DOCTYPE html>
 
@@ -35,8 +35,8 @@
 
                         <td>
                             <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password"></asp:TextBox>
+                            <%--<asp:CompareValidator ID="cvPassword" runat="server" ControlToComapre="txtPassword" ControlToValidate="txtConfirmPassword" ForeColor="Red" ErrorMessage="Password doesn't match!!!"></asp:CompareValidator>--%>
                             <asp:RequiredFieldValidator ID="rfvConfirmPassword" runat="server" ControlToValidate="txtPassword" ForeColor="Red" ErrorMessage="Required Field"></asp:RequiredFieldValidator>
-                            <%--<asp:CompareValidator ID="cvPassword" runat="server" ControlToComapre="txtConfirmPassword" ControlToValidate="txtPassword" ForeColor="Red" ErrorMessage="Password doesn't match!!!" Display="Dynamic" SetFocusOnError="True"></asp:CompareValidator>--%>
                            </td>
                     </tr>
 
@@ -87,12 +87,8 @@
                             <td>Nationality</td>
                             <td>
 
-                                <asp:DropDownList ID="txtDdlNationality" runat="server">
-                                    <asp:ListItem Value="1" Text="Indian"></asp:ListItem>
-                                    <asp:ListItem Value="2" Text="Nepali"></asp:ListItem>
-                                    <asp:ListItem Value="3" Text="SriLankan"></asp:ListItem>
-                                    <asp:ListItem Value="4" Text="Pakistani"></asp:ListItem>
-                                    <asp:ListItem Value="5" Text="Others"></asp:ListItem>
+                                <asp:DropDownList ID="txtDdlNationality" runat="server" Width="122px">
+                                   
                                 </asp:DropDownList>
                                 <asp:RequiredFieldValidator ID="rfvDdlNationality" runat="server" ControlToValidate="txtDdlNationality" ForeColor="Red" ErrorMessage="Required Field"></asp:RequiredFieldValidator>
 
@@ -106,4 +102,5 @@
         <asp:Button ID="btnSubmit" runat="server" OnClick="BtnSubmit_Click" Style="margin-left: 39px" Text="Submit" Width="157px" />
     </form>
 </body>
+
 </html>
