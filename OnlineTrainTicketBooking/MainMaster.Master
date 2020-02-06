@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="OnlineTrainTicketBooking.MainMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="MainMaster.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="cphead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <ul>
+            <li style="float: left"><b>IRCTC Online Ticket Booking</b></li>
+            <li><a href="Login.aspx">Login</a></li>
+            <li><a href="SignUp.aspx">SignUp</a></li>
+            <li><a href="#">Search Train</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+
+        <div class="content">
+            <asp:ContentPlaceHolder ID="cpBody" runat="server">
+    
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <div class="footer">
+            <h5 style ="float:right">copyrights@ Ruan Solutions </h5>
+        </div>
+
+    </form>
+</body>
+</html>

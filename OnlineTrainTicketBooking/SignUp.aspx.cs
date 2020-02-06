@@ -11,7 +11,7 @@ namespace OnlineTrainTicketBooking
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtDdlNationality_SelectedIndexChanged();
+            TxtDdlNationality_SelectedIndexChanged();
         }
 
         protected void BtnSubmit_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace OnlineTrainTicketBooking
             Response.Redirect("Login.aspx");
         }
 
-        protected void txtDdlNationality_SelectedIndexChanged()
+        protected void TxtDdlNationality_SelectedIndexChanged()
         {
 
             if (!IsPostBack)

@@ -15,13 +15,13 @@ namespace OnlineTrainTicketBooking
     {
 
         /// <summary>
-        /// formRegister control.
+        /// LbUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formRegister;
+        protected global::System.Web.UI.WebControls.Label LbUsername;
 
         /// <summary>
         /// txtUsername control.
@@ -42,6 +42,15 @@ namespace OnlineTrainTicketBooking
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvUsername;
 
         /// <summary>
+        /// Lbpassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Lbpassword;
+
+        /// <summary>
         /// txtPassword control.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace OnlineTrainTicketBooking
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPassword;
+
+        /// <summary>
+        /// LabelConfirmPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelConfirmPassword;
 
         /// <summary>
         /// txtConfirmPassword control.
@@ -78,6 +96,24 @@ namespace OnlineTrainTicketBooking
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvConfirmPassword;
 
         /// <summary>
+        /// cvPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvPassword;
+
+        /// <summary>
+        /// LabelName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelName;
+
+        /// <summary>
         /// txtName control.
         /// </summary>
         /// <remarks>
@@ -94,6 +130,15 @@ namespace OnlineTrainTicketBooking
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvName;
+
+        /// <summary>
+        /// LabelMailID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelMailID;
 
         /// <summary>
         /// txtMailId control.
@@ -114,6 +159,15 @@ namespace OnlineTrainTicketBooking
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rvfMailId;
 
         /// <summary>
+        /// LabelDob control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelDob;
+
+        /// <summary>
         /// txtDob control.
         /// </summary>
         /// <remarks>
@@ -121,6 +175,15 @@ namespace OnlineTrainTicketBooking
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDob;
+
+        /// <summary>
+        /// Labelgender control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Labelgender;
 
         /// <summary>
         /// rdbtnMale control.
@@ -150,6 +213,15 @@ namespace OnlineTrainTicketBooking
         protected global::System.Web.UI.WebControls.RadioButton rdbtnOther;
 
         /// <summary>
+        /// LabelMobilenumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelMobilenumber;
+
+        /// <summary>
         /// txtMobilenumber control.
         /// </summary>
         /// <remarks>
@@ -166,6 +238,15 @@ namespace OnlineTrainTicketBooking
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revMobileNumber;
+
+        /// <summary>
+        /// LabelNationality control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelNationality;
 
         /// <summary>
         /// txtDdlNationality control.

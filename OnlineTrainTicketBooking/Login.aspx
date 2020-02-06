@@ -1,33 +1,29 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="OnlineTrainTicketBooking.Login" %>
+﻿<%@ Page  Language="C#" MasterPageFile ="~/MainMaster.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="OnlineTrainTicketBooking.Login" %>
+<asp:Content ID ="HeadContent" ContentPlaceHolderID ="cphead" runat ="server">
+        <link href="FormDesign.css" rel="stylesheet" type="text/css" />
+  
+</asp:Content>
+   
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="formLogin" runat="server">
-        <div>
-            <h2>IRCTC Online Train Ticket Booking</h2>
-            <br />
-            <br />
-            <div>
-                
-                <b>UserName</b>
-                <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox><br />
-                <br />
-                
-                <b>Password&nbsp;&nbsp; </b>
-                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox><br />
-                <br />
-
-                <asp:Button ID="btnLogin" runat="server" Text="Login" Width="100px" OnClick="btnLogin_Click" />
-                
-                <asp:Button ID="btnSignUp" runat="server" Text="SignUp" Width="100px" OnClientClick="window.open('SignUp.aspx','SignUpPage');" />
-           
-                </div>
+<asp:Content ID ="BodyContent" ContentPlaceHolderID ="cpbody" runat ="server">
+    
+  <div class="LoginBodyContainer">
+        <div class ="LoginContainer">
+            <table>
+                <tr>
+                <td> UserName</td>
+               <td><asp:TextBox ID="txtUsername" runat="server"></asp:TextBox></td>
+            </tr>
+                <tr>
+                <td>Password</td>
+                <td><asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox></td>
+                </tr>
+                <tr>
+                <td><asp:Button ID="btnLogin" runat="server" Text="Login" Width="100px" OnClick="BtnLogin_Click" /></td>
+                <td>
+                <asp:Button ID="btnSignUp" runat="server" Text="SignUp" Width="100px" OnClick="BtnSignUp_Click" /> </td>
+           </tr>
+             </table>
         </div>
-    </form>
-</body>
-</html>
+      </div>
+   </asp:Content>

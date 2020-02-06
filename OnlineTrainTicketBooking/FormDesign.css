@@ -1,0 +1,24 @@
+﻿Html, body {
+    height: 100%;
+}
+
+.LoginBodyContainer {
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.LoginContainer{
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.SignUpBodyContainer {
+    display: table;
+    height: 100%;
+    margin: auto;
+}
+.SignUpContainer {
+    display: table-cell;
+    vertical-align: middle;
+}

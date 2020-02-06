@@ -24,7 +24,7 @@ namespace OnlineTrainTicketBooking
                         sqlCommand.Parameters.AddWithValue("@ConfirmPassword", user.ConfirmPassword);
                         sqlCommand.Parameters.AddWithValue("@Name", user.Name);
                         sqlCommand.Parameters.AddWithValue("@MailId", user.MailId);
-                        sqlCommand.Parameters.AddWithValue("@Dateofbirth", user.DateOfBirth);
+                        sqlCommand.Parameters.AddWithValue("@Dateofbirth", user.DateOfBirth.Date);
                         sqlCommand.Parameters.AddWithValue("@Gender", user.Gender);
                         sqlCommand.Parameters.AddWithValue("@MobileNumber", user.MobileNumber);
                         sqlCommand.Parameters.AddWithValue("@Nationality", user.Nationality);
